@@ -1,27 +1,9 @@
 {
   "version": 2,
-  "builds": [
+  "headers": [
     {
-      "src": "server.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "^/socket.io(.*)",
-      "dest": "server.js"
-    },
-    {
-      "src": "^/health(.*)",
-      "dest": "server.js"
-    },
-    {
-      "src": "^/.*",
-      "dest": "index.html"
+      "source": "/api/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "no-store" }]
     }
   ]
 }

@@ -1,14 +1,11 @@
 {
-  "name": "realtime-chat-call",
-  "version": "1.0.0",
-  "description": "Real-time chat and voice/video call app using Express + Socket.IO + WebRTC",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
+  "name": "shalimar-notice-board",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Shalimar Notice Board - Vercel serverless functions backed by Upstash Redis for real persistence.",
+  "engines": { "node": ">=18.x" },
   "dependencies": {
-    "express": "^4.19.2",
-    "socket.io": "^4.7.5",
-    "socket.io-client": "^4.8.3"
+    "@upstash/redis": "^1.38.0",
+    "exceljs": "^4.4.0"
   }
 }
